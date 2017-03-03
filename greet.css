@@ -45,3 +45,12 @@ button {
     font-family: cursive, sans-serif;
     font-size: 36px;
 }
+#languageSelect {
+    background-color: floralwhite;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: cursive, sans-serif;
+}
