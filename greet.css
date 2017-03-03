@@ -1,0 +1,47 @@
+Body {
+    background-color: beige;
+}
+#page {
+    background-color: burlywood;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+h1 {
+    font-family: Times New Roman, sans-serif;
+    font-size: 72px;
+}
+h2 {
+    background-color: ivory;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: cursive, sans-serif;
+    font-size: 36px;
+}
+input {
+    text-align: center;
+    font-size: 32px;
+}
+button {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#output {
+    background-color: floralwhite;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: cursive, sans-serif;
+    font-size: 36px;
+}
