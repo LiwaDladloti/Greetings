@@ -7,7 +7,7 @@ function greetMe() {
 }
 
 //Global variable that will be used to count number of clicks on button
-var clickCount = 0;
+var clickCount = Number(localStorage.clickCount);
 
 //function that will be called on my button
 function myName() {
