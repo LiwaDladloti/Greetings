@@ -37,7 +37,7 @@ function myName() {
     
     //localStorage--
     //tells it that the type of storage should not be undefind
-    if (typeof (Storage) !== 'undefined') {
+    if (typeof (localStorage) !== 'undefined') {
     //sets 'clickCounts' variable to localStorage
         if (localStorage.clickCount && xxx.length > 0) {
     //if button is clicked, clickCounts increaments by 1
