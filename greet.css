@@ -59,7 +59,6 @@ audio {
 }
 
 #greet, #greetCount {
-    padding-top: 100px;
     clear: both;
     display: inline;
 }
