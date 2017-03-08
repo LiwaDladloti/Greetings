@@ -31,3 +31,12 @@ function myName() {
     //locstor will store the current number of counts
     localStorage.setItem('currentGreets',  Number(clickCount));
 }
+
+function resetBtn() {
+    'use strict';
+    var rst = document.getElementById('clickCount');
+    if (rst >= 0) {
+        document.getElementById('greetCount').innerHTML = clickCount = 'Greets: ' + 0;
+    }
+    localStorage.clear();
+}
