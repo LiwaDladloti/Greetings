@@ -30,6 +30,12 @@ function myName() {
         document.getElementById('output').innerHTML = 'Salve, ' + xxx;
         //Then the clickCount should increament by 1 when button is pressed.
         clickCount += 1;
+    } else if (document.getElementById('English').checked && xxx.length > 0 && namesGreeted[xxx] !== undefined) {
+        document.getElementById('output').innerHTML = 'Hello, ' + xxx;
+    } else if (document.getElementById('isiXhosa').checked && xxx.length > 0 && namesGreeted[xxx] !== undefined) {
+        document.getElementById('output').innerHTML = 'Molo, ' + xxx;
+    } else if (document.getElementById('Latin').checked && xxx.length > 0 && namesGreeted[xxx] !== undefined) {
+        document.getElementById('output').innerHTML = 'Salve, ' + xxx;
     }
     //when greet me button has been pressed, the TextBox Value should be blank therefore counter does not increament
     document.getElementById('TextBox').value = "";
