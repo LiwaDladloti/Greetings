@@ -1,6 +1,6 @@
 //Global variable that will be used to count number of clicks on button
 var clickCount = Number(localStorage.getItem('currentGreets'));
-document.getElementById('greetCount').innerHTML = 'Greets: ' + clickCount;
+document.getElementById('greetCount').innerHTML = clickCount;
 
 var namesGreeted = {};
 
@@ -40,7 +40,7 @@ function myName() {
     //when greet me button has been pressed, the TextBox Value should be blank therefore counter does not increament
     document.getElementById('TextBox').value = "";
     //Tracks and displays number of times the greet me button is clicked and returns 'Greets: + Number of times greeted'
-    document.getElementById('greetCount').innerHTML = 'Greets: ' + clickCount;
+    document.getElementById('greetCount').innerHTML = clickCount;
     
     //locstor will store the current number of counts
     localStorage.setItem('currentGreets',  Number(clickCount));
@@ -50,7 +50,7 @@ function resetBtn() {
     'use strict';
     var rst = document.getElementById('clickCount');
     if (rst >= 0) {
-        document.getElementById('greetCount').innerHTML = clickCount = 'Greets: ' + 0;
+        document.getElementById('greetCount').innerHTML = clickCount = 0;
     }
     localStorage.clear();
 }

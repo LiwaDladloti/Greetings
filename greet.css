@@ -57,3 +57,12 @@ input {
 audio {
     display: none;
 }
+
+#greet, #greetCount {
+    padding-top: 100px;
+    clear: both;
+    display: inline;
+}
+hr {
+    visibility: hidden;
+}
