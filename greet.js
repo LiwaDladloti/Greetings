@@ -1,6 +1,6 @@
 //Global variable that will be used to count number of clicks on button
 var clickCount = Number(localStorage.getItem('currentGreets'));
-
+document.getElementById('greetCount').innerHTML = 'Greets: ' + clickCount;
 
 //function that will be called on my button
 function myName() {
