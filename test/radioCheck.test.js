@@ -2,7 +2,7 @@ describe('Greet function', function() {
     it('should greet Liwa in English', function() {
         var englishGreeting = radioCheck('Liwa', 'English');
         assert.equal('Hello, Liwa', englishGreeting);
-    });
+    })  ;
     
     it('should greet Liwa in isiXhosa', function() {
         var xhosaGreeting = radioCheck('Liwa', 'isiXhosa');
