@@ -6,6 +6,7 @@ var namesGreeted = {};
 
 for (var i = 0; i < namesGreeted.length; i++) {  
         }
+var textBox = document.querySelector('#TextBox');
 
 //function that will be called on my button
 function myName() {
@@ -45,16 +46,28 @@ function myName() {
 //    //locstor will store the current number of counts
 //    localStorage.setItem('currentGreets',  Number(clickCount));
     
-    document.getElementById('output').innerHTML = radioCheck();
+//    document.getElementById('output').innerHTML = radioCheck(textBox.value, langs(), greetCounter);
+//    document.getElementById('greetCount').innerHTML = greetCounter(radioCheck());
     
+    if (textBox && namesGreeted[textBox.value] === undefined) {
+        if(textBox.value.trim() < 1) {
+            alert ('Type your name');
+            return
+        }
+        namesGreeted[textBox.value] = 1;
+        document.getElementById('output').innerHTML = radioCheck(textBox.value, langs(), greetCounter);
+        document.getElementById('greetCount').innerHTML = greetCounter(radioCheck());
+    } else if (textBox && namesGreeted[textBox.value] !== undefined) {
+        document.getElementById('output').innerHTML = radioCheck(textBox.value, langs());
+    }
     
 }
 
-function resetBtn() {
-    'use strict';
-    var rst = document.getElementById('clickCount');
-    if (rst >= 0) {
-        document.getElementById('greetCount').innerHTML = clickCount = 0;
-    }
-    localStorage.clear();
-}
+//function resetBtn() {
+//    'use strict';
+//    var rst = document.getElementById('clickCount');
+//    if (rst >= 0) {
+//        document.getElementById('greetCount').innerHTML = clickCount = 0;
+//    }
+//    localStorage.clear();
+//}
